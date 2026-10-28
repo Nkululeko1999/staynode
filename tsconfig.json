@@ -20,7 +20,8 @@
     "strictPropertyInitialization": false,
     "types": [
       "vitest/globals",
-      "node"
+      "node",
+      "jest"
     ],
     "paths": {
       "@app/common": [
@@ -30,5 +31,14 @@
         "./libs/common/src/*"
       ]
     }
-  }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/staynode/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/reservations/tsconfig.app.json"
+    }
+  ]
 }
